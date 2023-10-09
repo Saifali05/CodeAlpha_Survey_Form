@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <header>
+  <div id="title"><h1>Survey Form</h1>
+    </header>
+
+<form id="survey-form">
+
+  <div id="description">Let Us Know How We Can Improve Our Services...</div><br>
+
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+      <label class="left" id="name-label" for="name">*First Name:</label>
+    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your First name" required>
+    </div>
+
+    <div class="sub-group">
+        <label class="left" id="name-label" for="name">*Last Name:</label>
+      <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your Last name" required>
+      </div>
+
+    <div class="sub-group">
+      <label class="left" id="email-label" for="email">*Email Id:</label>
+    <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+    </div>
+
+    <div class="sub-group">
+      <label  class="left" id="number-label" for="number">*Age:</label>
+    <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field" id="number" required>
+  </div>
+
+    <div class="sub-group">
+      <label class="left" id="handphone-label" for="Phone">*Phone:</label>
+    <input type="text" placeholder="Phone Number" class="right input-field" id="handphone" required>
+  </div>
+
+    <div class="sub-group">
+      <label class="left" for="dropdown">*Specific Needs of The:</label>
+
+      <select class="right dropdown" id="dropdown" name="dropdown">
+        <option selected disabled>Select an option</option>
+        <option value="first">Bussiness</option>
+        <option value="never">Organization</option>
+      </select>
+    </div>
+  </fieldset>
+
+
+     <fieldset class="fieldset">
+   <h2> Any Comments or Suggestions?</h2>
+
+    <div class="commentbox">
+
+   <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+
+   <br></br>
+
+  <button id="submit" type="submit">Submit</button>
+       </div></fieldset>
+</form>
+</div>
+</body>
+</html>
